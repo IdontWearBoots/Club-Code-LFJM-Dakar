@@ -1,2 +1,2 @@
 # Club-Code-LFJM-Dakar
-lol idk what im doing
+Le site du club de coding du lycée jean mermoz de Dakar
