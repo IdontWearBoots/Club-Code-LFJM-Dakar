@@ -4,5 +4,19 @@ html {
 
 body {
   height: 100%;
-  background-color: cadetblue;
+  text-align: center;
+  font-family: consolas;
+  color: rgb(223, 212, 166);
+  background-color: rgb(1, 25, 32);
+  accent-color: none;
+}
+
+.red {
+  color: rgb(214, 50, 0);
+}
+.yellow {
+  color: rgb(231, 231, 31);
+}
+.blue {
+  color: lightblue;
 }
