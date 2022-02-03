@@ -11,6 +11,11 @@ body {
   accent-color: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .red {
   color: rgb(214, 50, 0);
 }
@@ -18,5 +23,52 @@ body {
   color: rgb(231, 231, 31);
 }
 .blue {
-  color: lightblue;
+  color: rgb(97, 204, 240);
 }
+
+.growsBigger {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.growsBigger:hover {
+  font-size: 1.5em;
+}
+
+.textWithBackgroundImage {
+  background-image: url("images/senegal.png");
+  background-repeat: no-repeat;
+  background-size: 5em;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  https://codepen.io/alvarotrigo/pen/xxLvyOG
+  oml thank goodness for this guy, love the animation
+*/
+
+.waivy:hover span{
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-transform: uppercase;
+  animation: waivy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes waivy {
+  0%,40%,100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
