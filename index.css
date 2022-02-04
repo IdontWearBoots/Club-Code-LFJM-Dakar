@@ -1,14 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
 html {
   height: 100%;
+  --text-color: rgb(223, 212, 166);
+  --main-background-color: rgb(1, 25, 32);
 }
 
 body {
   height: 100%;
   text-align: center;
   font-family: consolas;
-  color: rgb(223, 212, 166);
-  background-color: rgb(1, 25, 32);
-  accent-color: none;
+  color: var(--text-color);
+  background-color: var(--main-background-color);
 }
 
 a {
@@ -26,15 +29,15 @@ a {
   color: rgb(97, 204, 240);
 }
 
-.growsBigger {
+.grows-bigger {
   transition: all 0.5s;
   cursor: pointer;
 }
-.growsBigger:hover {
+.grows-bigger:hover {
   font-size: 1.5em;
 }
 
-.textWithBackgroundImage {
+.text-with-background-image {
   background-image: url("images/senegal.png");
   background-repeat: no-repeat;
   background-size: 5em;
@@ -50,15 +53,20 @@ a {
 }
 
 /*
-  https://codepen.io/alvarotrigo/pen/xxLvyOG
-  oml thank goodness for this guy, love the animation
+https://codepen.io/alvarotrigo/pen/xxLvyOG
+oml thank goodness for this guy, love the animation
 */
 
+.waivy {
+  font-family: "Fira Code", Consolas;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
 .waivy:hover span{
   position: relative;
   display: inline-block;
   color: inherit;
-  text-transform: uppercase;
   animation: waivy 1s infinite;
   animation-delay: calc(0.1s * var(--i));
 }
@@ -72,3 +80,33 @@ a {
   }
 }
 
+.moves-up {
+  transition: all 0.5s;
+}
+.moves-up:hover {
+  transform: translateY(-10px);
+}
+
+.langages-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  column-gap: 1.5em;
+  grid-template-columns: auto auto auto;
+}
+.langage {
+  text-align: left;
+  width: 250px;
+  color: inherit;
+  border: 1px solid var(--text-color);
+  border-radius: 1em;
+  padding: 1em;
+}
+.langage-name {
+  display: inline;
+}
+.langage-logo {
+  width: 5em;
+  height: 5em;
+}
