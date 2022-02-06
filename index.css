@@ -20,7 +20,7 @@ a {
 }
 
 .red {
-  color: rgb(214, 50, 0);
+  color: rgb(255, 72, 16);
 }
 .yellow {
   color: rgb(231, 231, 31);
@@ -53,8 +53,8 @@ a {
 }
 
 /*
-https://codepen.io/alvarotrigo/pen/xxLvyOG
-oml thank goodness for this guy, love the animation
+  https://codepen.io/alvarotrigo/pen/xxLvyOG
+  oml thank goodness for this guy, love the animation
 */
 
 .waivy {
@@ -100,11 +100,31 @@ oml thank goodness for this guy, love the animation
   width: 250px;
   color: inherit;
   border: 1px solid var(--text-color);
-  border-radius: 1em;
+  border-radius: 1.5em;
   padding: 1em;
+  padding-top: 1.65em;
+}
+
+/*
+  https://codepen.io/silvia-odwyer/pen/RwKMOpb
+  neon animation
+*/
+
+.langage:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  box-shadow: 0 0 .2rem var(--accent-color),
+              0 0 .2rem var(--accent-color),
+              0 0 2rem var(--accent-color),
+              0 0 0.8rem var(--accent-color),
+              0 0 2.8rem var(--accent-color),
+              inset 0 0 1.3rem var(--accent-color);
 }
 .langage-name {
   display: inline;
+  position: relative;
+  top: -25px;
+  font-family: "Fira Code", Consolas;
 }
 .langage-logo {
   width: 5em;
