@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+    font-family: Consolas;
+}
+
+.membres-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+}
+.membre {
+    width: 250px;
+    background-color: rgb(4, 14, 22);
+    padding: 1em;
+    border-radius: 1em;
+    transition: all 0.5s;
+}
+.profile-picture {
+    width: 5em;
+    height: 5em;
+    border-radius: 45%;
+}
+.membre:hover {
+    transform: scaleY(110%) scaleX(110%);
+}
+.liens {
+    color: green;
+    font-size: 13px;
+}
+
+.scroller {
+    color: rgb(47, 255, 116);
+    text-decoration: none;
+}

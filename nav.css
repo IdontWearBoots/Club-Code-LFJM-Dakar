@@ -1,9 +1,19 @@
-html {
-  height: 100%;
+:root {
+  -ms-overflow-style: none;
+  --text-color: rgb(223, 212, 166);
+  --main-background-color: rgb(1, 25, 32);
 }
+
+html {
+  height: 94vh;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+} 
+
 body {
   height: 100%;
-  overflow: scroll;
 }
 
 li {
@@ -15,11 +25,12 @@ li {
 }
 .content {
   width: auto;
-  height: 100%;
+  height: 97vh;
   position: relative;
   text-align: center;
   z-index: 0;
-  margin-left: 60px;
+  margin-left: 100px;
+  overflow: scroll;
 }
 
 .nav-container {
@@ -28,7 +39,7 @@ li {
   transform: translateY(-50%);
   background-color: inherit;
   width: 60px;
-  height: 100%;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
