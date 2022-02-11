@@ -1,4 +1,4 @@
-Basically all images used in this website were taken from www.flaticon.org
+Basically all external images used in this website were taken from www.flaticon.com
 The authors of these images are: 
     - Freepik
     - Icon.doit 

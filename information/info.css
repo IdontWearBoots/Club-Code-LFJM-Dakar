@@ -8,6 +8,11 @@ body {
     font-family: Consolas;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .membres-container {
     display: flex;
     flex-direction: row;
@@ -32,9 +37,38 @@ body {
 .liens {
     color: green;
     font-size: 13px;
+    
+}
+
+.waivy {
+  font-family: "Fira Code", Consolas;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color:rgb(240, 78, 14);
+  transition: all 0.5s;
+}
+.waivy:hover {
+    font-size: 1.5em;
+}
+.waivy:hover span{
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  animation: waivy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes waivy {
+  0%,40%,100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
 }
 
 .scroller {
-    color: rgb(47, 255, 116);
+    font-family: "Fira Code", Consolas;
     text-decoration: none;
 }
