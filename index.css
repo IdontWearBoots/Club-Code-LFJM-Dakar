@@ -22,6 +22,12 @@ a {
 .blue {
   color: rgb(97, 204, 240);
 }
+.darkblue {
+  color: rgb(71, 43, 255);
+}
+.green {
+  color: rgb(21, 235, 118);
+}
 
 .grows-bigger {
   transition: all 0.5s;
