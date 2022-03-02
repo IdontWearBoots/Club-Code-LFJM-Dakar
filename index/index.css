@@ -32,7 +32,7 @@ a {
 }
 
 .text-with-background-image {
-  background-image: url("images/senegal.png");
+  background-image: url("../images/senegal.png");
   background-repeat: no-repeat;
   background-size: 5em;
   background-position: center;

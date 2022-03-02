@@ -7,6 +7,7 @@
 html {
   height: 94vh;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
   display: none;
@@ -23,6 +24,7 @@ li {
 .title {
   font-size: 6em;
 }
+
 .content {
   width: auto;
   height: 97vh;
@@ -31,6 +33,7 @@ li {
   z-index: 0;
   margin-left: 100px;
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 .nav-container {

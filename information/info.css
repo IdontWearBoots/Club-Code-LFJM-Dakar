@@ -1,74 +1,79 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth !important;
 }
 
 body {
-    background-color: var(--main-background-color);
-    color: var(--text-color);
-    font-family: Consolas;
+	background-color: var(--main-background-color);
+	color: var(--text-color);
+	font-family: Consolas, monospace;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: underline;
+	color: inherit;
+}
+
+.liens {
+	color: green;
+	font-size: 13px;
 }
 
 .membres-container {
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    justify-content: center;
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+	justify-content: center;
 }
 .membre {
-    width: 250px;
-    background-color: rgb(4, 14, 22);
-    padding: 1em;
-    border-radius: 1em;
-    transition: all 0.5s;
+	width: 250px;
+	background-color: rgb(4, 14, 22);
+	padding: 1em;
+	border-radius: 1em;
+	transition: all 0.5s;
 }
 .profile-picture {
-    width: 5em;
-    height: 5em;
-    border-radius: 45%;
+	width: 5em;
+	height: 5em;
+	border-radius: 45%;
 }
 .membre:hover {
-    transform: scaleY(110%) scaleX(110%);
-}
-.liens {
-    color: green;
-    font-size: 13px;
-    
+	transform: scaleY(105%) scaleX(105%);
 }
 
 .waivy {
-  font-family: "Fira Code", Consolas;
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  color:rgb(240, 78, 14);
-  transition: all 0.5s;
+	font-family: "Fira Code", Consolas;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	color: rgb(240, 78, 14);
+	transition: all 0.5s;
+	text-decoration: none;
 }
 .waivy:hover {
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
-.waivy:hover span{
-  position: relative;
-  display: inline-block;
-  color: inherit;
-  animation: waivy 1s infinite;
-  animation-delay: calc(0.1s * var(--i));
+.waivy:hover span {
+	position: relative;
+	display: inline-block;
+	color: inherit;
+	animation: waivy 1s infinite;
+	animation-delay: calc(0.1s * var(--i));
 }
 
 @keyframes waivy {
-  0%,40%,100% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(-20px);
-  }
+
+	0%,
+	40%,
+	100% {
+		transform: translateY(0);
+	}
+
+	20% {
+		transform: translateY(-20px);
+	}
 }
 
 .scroller {
-    font-family: "Fira Code", Consolas;
-    text-decoration: none;
+	font-family: "Fira Code", Consolas;
+	text-decoration: none;
 }
