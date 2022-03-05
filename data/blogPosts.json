@@ -1,20 +1,16 @@
 {
     "posts": [
         {
-            "title": "<h3> TEST PUBLICATION <h3>",
+            "title": "<h1> TEST PUBLICATION <h1>",
             "imageSrcs": [
                 {
-                    "src": "images/blog_post_images/first_blog_image.jpg",
-                    "alt": "premiere image de la premiere publication"
+                    "src": "images/club_logo_and_other/club_code.png",
+                    "alt": "logo du club"
                 }
             ],
             "body": [
-                "<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
-                "<p> Ornare arcu odio ut sem nulla pharetra diam sit amet.</p>",
-                "<p> Tristique senectus et netus et malesuada fames ac.</p>",
-                "<p> Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec.</p>",
-                "<p> Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit.",
-                "<p> Etiam erat velit scelerisque in dictum non consectetur a. </p>"
+                "<p> Ceci est la première publication sur ce blog !</p>",
+                "<p> Salut a tous ! </p>"
             ]
         }
     ]
