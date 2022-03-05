@@ -1,0 +1,30 @@
+body {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+    font-family: Consolas;
+    text-align: center;
+}
+
+/* entirety of posts */
+.posts {
+    width: 70vw;
+    text-align: center;
+}
+/* singular post */
+.post {
+    width: 500px; 
+    margin: 0 50%;
+    border: 1px solid green;
+}
+/* div of images in every post */
+.postImages {
+    width: 15em;
+    border: 1px solid yellow;
+}
+.postImages img {
+    width: 100%;
+    max-height: 100px;
+}
+.postText {
+    border: 1px solid lightblue;
+}

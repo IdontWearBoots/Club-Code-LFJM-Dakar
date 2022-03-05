@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Contact</title>
+</head>
+<body>
+    <ul class="nav-container">
+
+        <a href="../blog/blog.html">
+            <li class="nav-item sides">
+                <img class="nav-item-image" src="../images/nav_bar/blog-unselected.png" alt="there">
+            </li>
+        </a>
+
+        <a href="../index/index.html">
+            <li class="nav-item">
+                <img class="nav-item-image" src="../images/nav_bar/house-unselected.png" alt="is a">
+            </li>
+        </a>
+
+        <li class="nav-item sides nav-item-selected">
+            <img class="nav-item-image" src="../images/nav_bar/info-selected.png" alt="problem">
+        </li>
+    </ul>
+
+    <div class="content">
+
+        <div class="section first">
+            <img src="images/club/together.png" alt="Une très belle image de nous tous"
+                onerror="this.src = '../images/default-profile-picture.jpg'"
+            >
+        </div>
+        
+        <div class="section second">
+            <h1 class="title">Contact</h1>
+            <br>
+            
+            <form action="mailto: oscarbaele@gmail.com">
+                <!-- <label for="lname">Nom complet: </label> -->
+                <input id="name" type="text" name="name" placeholder="Votre nom">
+                
+                <br>
+                <br>
+                <br>
+            
+                <!-- <label for="mail">Addresse mail valide: </label> -->
+                <input id="mail" type="email" name="mail" placeholder="Votre mail">
+            
+                <br>
+                <br>
+                <br>
+            
+                <!-- <label for="message">Message: </label> -->
+                <textarea id="message" type="text" placeholder="Le message"></textarea>
+                
+                <br>
+                <br>
+                <br>
+
+                <button type="submit">Envoyer</button>
+            </form>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>

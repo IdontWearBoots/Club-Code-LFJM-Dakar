@@ -1,0 +1,24 @@
+{
+  "name": "club-code-lfjm-dakar",
+  "version": "1.0.0",
+  "description": "Site web pour le club de code du lfjm dakar",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IdontWearBoots/Club-Code-LFJM-Dakar.git"
+  },
+  "author": "Oscar Baele, Zeinab Diop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IdontWearBoots/Club-Code-LFJM-Dakar/issues"
+  },
+  "homepage": "https://github.com/IdontWearBoots/Club-Code-LFJM-Dakar#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}

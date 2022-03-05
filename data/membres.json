@@ -1,0 +1,77 @@
+{
+    "membres": [
+        [
+            {
+                "id":"Oscar",
+                "imagesrc": "images/people/oscar.jpg",
+                "name": "Oscar Baele",
+                "description": [
+                    "<p>J'adore le Java, le Javascript et le webdev</p>",
+                    "<p>Ce que dit Jad est faux</p>",
+                    "<br>"
+                ],
+                "links": [
+                    "<a href='https://github.com/IdontWearBoots'> Github </a> ",
+                    "baeleoscar@gmail.com <br>",
+                    "+221 77 205 24 46"
+                ]
+            },
+            {
+                "id":"Jad",
+                "imagesrc": "images/people/jad.jpg",
+                "name": "Jad Bazzi",
+                "description": [
+                    "<p>Le Python ets le meilleure language de programmation</p>",
+                    "<p>Bien mieux que le Java</p>",
+                    "<br>"
+                ],
+                "links":[
+                    "jadbazzi2008@gmail.com <br>",
+                    "+221 78 521 66 68"
+                ]
+            },
+            {
+                "id": "Abdel",
+                "imagesrc": "images/people/abdel.jpg",
+                "name": "Abdel Kader Aboubacar Sadou",
+                "description": [
+                    "<p>Je veux m'ameiliorer en Python</p>",
+                    "<br>",
+                    "<br>"
+                ],
+                "links": [
+                    "kadersadou@gmail.com <br>",
+                    "+221 78 169 94 32"
+                ]
+            }
+        ],
+        [
+            {
+                "id": "Lucien",
+                "imagesrc": "images/people/lucien.jpg",
+                "name": "Lucien Amadou",
+                "description": [
+                    "<p>[ INFOS LUCIEN ]</p>",
+                    "<br>",
+                    "<br>"
+                ],
+                "links": [
+                    "[ LIENS LUCIEN ]"
+                ]
+            },
+            {
+                "id": "Zeinab",
+                "imagesrc": "images/people/zeinab.jpg",
+                "name": "Zeinab Diop",
+                "description": [
+                    "<p>[ INFOS ZEINAB ]</p>",
+                    "<br>",
+                    "<br>"
+                ],
+                "links": [
+                    "[ LIENS ZEINAB ]"
+                ]
+            }
+        ]
+    ]
+}
