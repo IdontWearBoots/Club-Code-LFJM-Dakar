@@ -11,7 +11,7 @@ app.use(express.static("public/"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    res.render("index");    
+    res.render("index");
 });
 
 app.get("/info", (req, res) => {
@@ -25,6 +25,10 @@ app.get("/blog", (req, res) => {
         allBlogPosts: posts
     });
 });
+
+app.get("/blog-admin", (req, res) => {
+    res.render("blogAdmin/admin.ejs");
+})
 
 app.get("/contact", (req, res) => {
     res.render("contact/contact");

@@ -55,7 +55,7 @@ button[type="submit"] {
     border-radius: 4px;
     padding: 10px 16px;
     margin: 8px 16px 8px 16px;
-    background-color: rgb(4, 14, 22);
+    background-color: var(--main-accent-color);
     color: var(--text-color);
     border: 0;
     cursor: pointer;

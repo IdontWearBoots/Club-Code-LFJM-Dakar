@@ -18,7 +18,7 @@ body {
 .post {
     width: 600px;
     margin: 0 50%;
-    background-color: rgb(4, 14, 22);
+    background-color: var(--main-accent-color);
     border-radius: 1em;
     padding: 20px;
 }

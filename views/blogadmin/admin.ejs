@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faites une publication</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/blogAdmin.css">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <ul class="nav-container">
+
+        <li class="nav-item sides nav-item-selected">
+            <img class="nav-item-image" src="../images/nav_bar/blog-selected.png" alt="there">
+        </li>
+
+        <a href="/">
+            <li class="nav-item">
+                <img class="nav-item-image" src="../images/nav_bar/house-unselected.png" alt="is a">
+            </li>
+        </a>
+
+        <a href="info">
+            <li class="nav-item sides">
+                <img class="nav-item-image" src="../images/nav_bar/info-unselected.png" alt="problem">
+            </li>
+        </a>
+    </ul>
+
+    <div class="content">
+
+        <h1 class="title">Créez une nouvelle publication</h1>
+        
+        <div class="image-wrapper">
+            <div class="image">
+                <br>
+                <img src="" alt="" class="imageDisplay">
+                <br>
+            </div>
+            
+            <br>
+            <br>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <label for="imageSelect" id="labelImageSelector">+</label>
+        <input type="file" accept="image/*" name="imageSelect" id="imageSelect">
+
+        <br>
+        <br>
+
+        <!-- <label for="postTitle">Donnez un titre a votre publication: </label> -->
+        <input class="text" type="text" id="postTitle" name="postTitle" placeholder="Titre de la publication">
+
+        <br>
+        <br>
+
+        <!-- <label for="postBody"></label> -->
+        <textarea class="text" placeholder="Contenu de la publication" name="postBody" id="postBody"></textarea>
+
+    </div>
+
+    <script>
+        const fr = new FileReader();
+
+        $("#imageSelect").on("change", function(event) {
+            fr.readAsDataURL(event.target.files[0]);
+
+            fr.onload = e => {
+            	$(".imageDisplay").attr("src", e.target.result);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

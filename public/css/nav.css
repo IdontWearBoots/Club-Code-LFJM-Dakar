@@ -2,6 +2,7 @@
   -ms-overflow-style: none;
   --text-color: rgb(223, 212, 166);
   --main-background-color: rgb(1, 25, 32);
+  --main-accent-color: rgb(4, 14, 22);
 }
 
 html {

@@ -2,7 +2,7 @@
     "posts": [
         {
             "title": "<h1> TEST PUBLICATION <h1>",
-            "imageSrcs": [
+            "imageSrc": [
                 {
                     "src": "images/club_logo_and_other/club_code.png",
                     "alt": "logo du club"
