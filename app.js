@@ -1,22 +1,17 @@
 const bodyParser = require("body-parser");
-const fs = require('fs');
-const request = require('request');
+const fs = require("fs");
+const multer = require("multer");
 const express = require("express");
 const app = express();
 
 const port = 3000;
 const membres = require(`${__dirname}/data/membres.json`);
 const posts = require(`${__dirname}/data/blogPosts.json`);
+const upload = multer({dest: "/blog_post_images"}).single("imageSelect");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public/"));
 app.set("view engine", "ejs");
-
-function downloadImage(url, filename, callback){
-  request.head(url, function(err, res, body){
-    request(url).pipe(fs.createWriteStream(filename)).on('close', callback);
-  });
-};
 
 app.get("/", (req, res) => {
     res.render("index");
@@ -38,28 +33,36 @@ app.get("/blog-admin", (req, res) => {
     res.render("blogAdmin/admin.ejs");
 });
 
-app.post("/blog-admin", (req, res) => {
-    console.log(req);
+app.post("/blog-admin", upload, (req, res) => {
     
-    let post = {};
-    
-    post["title"] = `<h1> ${req.body.postTitle} <h1>`;
-    
-    let body = req.body.postBody.split(/(\r\n)|(\n)/g).filter(e => !/(\r\n)|(\n)/g.test(e)).filter(e => e);
-    
-    console.log(body);
-    
-    post["body"] = body;
+    let blogPostsPath = `${__dirname}/data/blogPosts.json`;
+    let post = {}
 
-    let imgName = imageSelect.slice(imageSelect.indexOf("."), imageSelect.length), 
-    
-    downloadImage(
-        res.body.imageSelect,
-        imgName, 
-        function(){ 
-            console.log(`${res.body.imageSelect} has been saved as ${imgName}`) 
+    post["title"] = req.body.postTitle;
+    post["body"] = req.body.postBody.split(/[\r\n]/g);
+
+    let fileData = req.body.fileData.replace(/^data:image\/\w+;base64,/, "");
+    let buffer = Buffer.from(fileData, 'base64');
+    let filePath = `/images/blog_post_images/${req.file.originalname}`;
+
+    post["imageSrc"] = {
+        "src": filePath,
+        "alt": filePath
+    }
+
+    fs.writeFile(`${__dirname}/public/${filePath}`, buffer, console.error);
+
+    fs.readFile(blogPostsPath, 'utf8', (err, data) => {
+        if(err){
+            console.log(err);
+            return;
         }
-    );
+
+        let obj = JSON.parse(data);
+        obj.posts.push(post);
+
+        fs.writeFile(blogPostsPath, JSON.stringify(obj), 'utf8', console.error);
+    });
 
     res.redirect("/blog");
 });

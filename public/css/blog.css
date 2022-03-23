@@ -9,6 +9,7 @@ body {
 .posts {
     text-align: center;
     display: flex;
+    row-gap: 1em;
     justify-content: center;
     align-items: center;
     flex-direction: column;

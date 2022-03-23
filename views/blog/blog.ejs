@@ -38,19 +38,16 @@
 
         <div class="posts">
 
-            <% for(let post of allBlogPosts.posts) { %>
+            <% for(let post of allBlogPosts.posts.reverse()) { %>
             <div class="post">
                 <div class="postTitle">
                     <%- post.title %>
                 </div>
                 <div class="postImages">
-                    <% for(let image of post.imageSrc) { %>
-                        <img 
-                            src=<%= image.src %> 
-                            alt=<%= image.alt %>
-                            onerror=" this.src = 'images/default-profile-picture.jpg' "
-                        >
-                    <% } %>
+                    <img 
+                        src=<%= post.imageSrc.src %> 
+                        alt=<%= post.imageSrc.alt %>
+                        onerror=" this.src = 'images/default-profile-picture.jpg'">
                 </div>
                 <div class="postText">
                     <% for(let row of post.body) { %>

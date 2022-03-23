@@ -71,6 +71,19 @@
                 "links": [
                     "[ LIENS ZEINAB ]"
                 ]
+            },
+            {
+                "id": "Maelys",
+                "imagesrc": "images/people/maelys.jpg",
+                "name": "Maelys Assigbetse",
+                "description": [
+                    "<p>[ INFOS MAELYS ]</p>",
+                    "<br>",
+                    "<br>"
+                ],
+                "links": [
+                    "[ LIENS MAELYS ]"
+                ]
             }
         ]
     ]
