@@ -62,3 +62,19 @@ body {
     height: 300px;
     resize: none;
 }
+
+button[type="submit"] {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin: 8px 16px 8px 16px;
+    background-color: var(--main-accent-color);
+    color: var(--text-color);
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.5s;
+}
+button[type="submit"]:hover {
+    transform: scale(120%);
+}

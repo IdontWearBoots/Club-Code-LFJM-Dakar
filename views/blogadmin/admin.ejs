@@ -30,43 +30,55 @@
             </li>
         </a>
     </ul>
-
+    
     <div class="content">
 
-        <h1 class="title">Créez une nouvelle publication</h1>
-        
-        <div class="image-wrapper">
-            <div class="image">
+        <form action="blog-admin" method="post">
+            
+            <h1 class="title">Créez une nouvelle publication</h1>
+            
+            <div class="image-wrapper">
+                <div class="image">
+                    <br>
+                    <img src="" alt="" class="imageDisplay">
+                    <br>
+                </div>
+                
                 <br>
-                <img src="" alt="" class="imageDisplay">
                 <br>
             </div>
             
             <br>
             <br>
-        </div>
+            <br>
+            
+            <label for="imageSelect" id="labelImageSelector">+</label>
+            <input type="file" accept="image/*" name="imageSelect" id="imageSelect">
+            
+            <br>
+            <br>
+            
+            <!-- <label for="postTitle">Donnez un titre a votre publication: </label> -->
+            <input class="text" type="text" id="postTitle" name="postTitle" placeholder="Titre de la publication">
+            
+            <br>
+            <br>
+            
+            <!-- <label for="postBody"></label> -->
+            <textarea class="text" placeholder="Contenu de la publication" name="postBody" id="postBody"></textarea>
+            
+            <br>
+            <br>
+        
+            <button type="submit">Publier</button>
 
-        <br>
-        <br>
-        <br>
+            <br>
+            <br>                
 
-        <label for="imageSelect" id="labelImageSelector">+</label>
-        <input type="file" accept="image/*" name="imageSelect" id="imageSelect">
-
-        <br>
-        <br>
-
-        <!-- <label for="postTitle">Donnez un titre a votre publication: </label> -->
-        <input class="text" type="text" id="postTitle" name="postTitle" placeholder="Titre de la publication">
-
-        <br>
-        <br>
-
-        <!-- <label for="postBody"></label> -->
-        <textarea class="text" placeholder="Contenu de la publication" name="postBody" id="postBody"></textarea>
+        </form>
 
     </div>
-
+    
     <script>
         const fr = new FileReader();
 
@@ -74,10 +86,10 @@
             fr.readAsDataURL(event.target.files[0]);
 
             fr.onload = e => {
-            	$(".imageDisplay").attr("src", e.target.result);
+                $(".imageDisplay").attr("src", e.target.result);
             }
         });
-    </script>
+        </script>
 
 </body>
 
