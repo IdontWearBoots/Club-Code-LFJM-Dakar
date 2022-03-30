@@ -37,8 +37,8 @@
         <br>
 
         <div class="posts">
-
-            <% for(let post of allBlogPosts.posts.reverse()) { %>
+            <% let posts = Array.from(allBlogPosts.posts) %>
+            <% for(let post of posts.reverse()) { %>
             <div class="post">
                 <div class="postTitle">
                     <%- post.title %>

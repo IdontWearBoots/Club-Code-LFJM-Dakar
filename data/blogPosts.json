@@ -1,20 +1,24 @@
 {
-    "posts": [
-        {
-            "title": "<h1> TEST PUBLICATION <h1>",
-            "imageSrc": {
-                "src": "images/club_logo_and_other/club_code.png",
-                "alt": "logo du club"
-            },
-            "body": ["<p> Ceci est la première publication sur ce blog !</p>", "<p> Salut a tous ! </p>"]
-        }, 
-        {
-            "title": "<h1> LIFE COULD BE A DREAM <h1>",
-            "body": ["<p> Sh-boom, if I could take you to a paradise up above<p>", "", "<p>If you will tell me I'm the only one that you love<p>", "", "<p>Life could be a dream, sweetheart, hello, hello again<p>", "", "<p>Sh-boom and hopin' we'll meet again, boom<p>"],
-            "imageSrc": {
-                "src": "/images/blog_post_images/sh_boom.png",
-                "alt": "/images/blog_post_images/sh_boom.png"
-            }
+    "posts": [{
+        "title": "<h1> TEST PUBLICATION <h1>",
+        "imageSrc": {
+            "src": "images/club_logo_and_other/club_code.png",
+            "alt": "logo du club"
+        },
+        "body": ["<p> Ceci est la première publication sur ce blog !</p>", "<p> Salut <a href='/blog-admin' class='none'>a<a> tous ! </p>"]
+    }, {
+        "title": "<h1> LIFE COULD BE A DREAM <h1>",
+        "body": ["<p> Sh-boom, if I could take you to a paradise up above<p>", "", "<p>If you will tell me I'm the only one that you love<p>", "", "<p>Life could be a dream, sweetheart, hello, hello again<p>", "", "<p>Sh-boom and hopin' we'll meet again, boom<p>"],
+        "imageSrc": {
+            "src": "/images/blog_post_images/sh_boom.png",
+            "alt": "/images/blog_post_images/sh_boom.png"
         }
-    ]
+    }, {
+    "title": "<h1> Le javascript </h1>",
+        "body": ["<p> Le javascript est le meilleur language du monde</p>", "<p>Personne ne peut dire autrement</p>"],
+        "imageSrc": {
+            "src": "/images/blog_post_images/js_logo.png",
+            "alt": "/images/blog_post_images/js_logo.png"
+        }
+    }]
 }

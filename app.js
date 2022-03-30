@@ -39,7 +39,7 @@ app.post("/blog-admin", upload, (req, res) => {
     let post = {}
 
     post["title"] = req.body.postTitle;
-    post["body"] = req.body.postBody.split(/[\r\n]/g);
+    post["body"] = req.body.postBody.split(/[\r\n]/g).filter(n => n);
 
     let fileData = req.body.fileData.replace(/^data:image\/\w+;base64,/, "");
     let buffer = Buffer.from(fileData, 'base64');
