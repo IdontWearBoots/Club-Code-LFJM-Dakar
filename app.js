@@ -1,13 +1,11 @@
 const bodyParser = require("body-parser");
 const fs = require("fs");
-const multer = require("multer");
 const express = require("express");
 const app = express();
 
 const port = 3000;
 const membres = require(`${__dirname}/data/membres.json`);
 const posts = require(`${__dirname}/data/blogPosts.json`);
-const upload = multer({dest: "/blog_post_images"}).single("imageSelect");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public/"));
