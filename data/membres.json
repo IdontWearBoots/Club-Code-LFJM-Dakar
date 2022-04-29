@@ -21,7 +21,7 @@
                 "imagesrc": "images/people/jad.jpg",
                 "name": "Jad Bazzi",
                 "description": [
-                    "<p>Le Python ets le meilleure language de programmation</p>",
+                    "<p>Le Python est le meilleur language de programmation</p>",
                     "<p>Bien mieux que le Java</p>",
                     "<br>"
                 ],
@@ -64,12 +64,14 @@
                 "imagesrc": "images/people/zeinab.jpg",
                 "name": "Zeinab Diop",
                 "description": [
-                    "<p>[ INFOS ZEINAB ]</p>",
-                    "<br>",
+                    "<p>comment souffrir de dépression chronique?</p>",
+                    "<br><p>apprendre la c++",
                     "<br>"
                 ],
                 "links": [
-                    "[ LIENS ZEINAB ]"
+                    "<a href='https://notzei.carrd.co'>my carrd!</a>",
+                    "<br>",
+                    "<br>"
                 ]
             },
             {
